@@ -10,7 +10,7 @@ My big epiphany is now: oh, it's all object storage, they have a protocol:// and
 Here's the Parquet in a straightforward URL: 
 
 ```
-https://github.com/mdsumner/azure-silliness/raw/main/io-lulc-9-class.parquet
+https://github.com/mdsumner/azure-filesystem-abstraction/raw/main/io-lulc-9-class.parquet
 ```
 
 Here's how I got access to this Parquet, and save it here so we can use a straightfoward URL. 
