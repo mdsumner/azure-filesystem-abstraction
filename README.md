@@ -1,11 +1,12 @@
 ## sigh
 
-This is my first reponse to this blog post, I really appreciate the details there as it gives me something to go on. But also, how ridiculous is this azure/python/json stuff - a json api is fine, you can read text from the internet with a query - why all this extra layers? 
+This is my first reponse to this blog post, I really appreciate the details there as it gives me something to go on. But also, this azure/python/json stuff is a bit of a towering epic - a json api is fine, you can read text from the internet with a query - why all this extra layers?  And I was frustrated, but also on the verge of figuring a lot out. 
 
 https://blog.rtwilson.com/accessing-planetary-computer-stac-files-in-duckdb/
 
-Why all this silliness? Well I feel that the python/stac/azure/goog/aws tower is a little bit too much inferno now. STAC is text from the internet, parse it into a dataset and traverse the tree. Find URLs in it. Group and schedule how you like.  Authenticate. Stream the data, we have generic tools for this, in many programming langs. 
+STAC is text from the internet, parse it into a dataset and traverse the tree. Find URLs in it. Group and schedule how you like.  Authenticate. Stream the data, we have generic tools for this, in many programming langs. 
 
+My big epiphany is now: oh, it's all object storage, they have a protocol:// and containers "{bucket}" and then objects. Each is slightly different but GDAL has shown how common they can all be. 
 Here's the Parquet in a straightforward URL: 
 
 ```
