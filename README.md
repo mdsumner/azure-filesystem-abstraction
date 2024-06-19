@@ -1,4 +1,4 @@
-## sigh
+## filesystem abstractions
 
 This is my first reponse to this blog post, I really appreciate the details there as it gives me something to go on. But also, this azure/python/json stuff is a bit of a towering epic - a json api is fine, you can read text from the internet with a query - why all this extra layers?  And I was frustrated, but also on the verge of figuring a lot out. 
 
